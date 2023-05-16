@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Hobby</title>
+        <link rel="stylesheet" href="../CSSSite/index.css">
+        <link rel="stylesheet" href="../CSSSite/HomeStyle.css">
+        <link rel="stylesheet" href="../CSSSite/button.css">
+        <link rel="stylesheet" href="../CSSSite/footer.css">
+        <link rel="stylesheet" href="../CSSSite/form.css">
+        <link rel="stylesheet" href="../CSSSite/table.css">
+    </head>
+    <body style="background-image: url(../CSSSite/images/mainbg.jpg);">
+        
+        <header>
+            <div class="logo">My Website </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="../HTMLSite/home.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="../HTMLSite/HobbyPage.html" class="active">Hobbies</a>
+                    </li>
+                    <li>
+                        <a href="../HTMLSite/HomeTownPage.html" class="active">HomeTown</a>
+                    </li>
+                    <li>
+                        <a href="../HTMLSite/AboutPage.html" class="active">About</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </header>
+        <section class="container">
+            <div class="p10">
+                <h2 class="m0 align-center" style="color: white;">Hobby Page</h2>
+            </div>
+            <br/><br/>
+
+            <div class="align-center">
+                <div id="addSection"  class="hobby-content">
+                    <form onsubmit="return false">
+                        <div id="errorSection" class="error-msg">
+                            Fill all the fields.
+                        </div>
+                         
+                        <div class="control-group">
+                            <label>Enter your hobby and save*:</label>
+                            <input type="text" id="hobby" class="form-control" required />
+                        </div>
+                        <br/>
+                        <div class="col-10">
+                            <button class="btn" onclick="onClickCancel()">Cancel</button>
+                            <button class="btn success" onclick="onClickSave()">Save</button>
+                        </div>
+                    </form>
+                    
+                </div>
+                 
+                <br/>
+                
+                <div id="gridSection" class="hobby-content display-block">
+                    <div class="col-10 align-right">
+                        <button class="btn success" onclick="onClickAdd()">Add</button>
+                    </div>
+                    <br/>
+                    <table id="grid">
+                        <thead>
+                             
+                            <th>
+                                Hobby
+                            </th>
+                        </thead>
+                        <tbody>
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+        <script src="../JSSite/crud.js"></script>
+    </body>
+</html>

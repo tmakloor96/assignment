@@ -1,0 +1,49 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    position: fixed;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  } 
+
+  /* .clear{
+    clear:both;
+    } 
+    .main{
+    width:500px;
+    }
+    .top {
+    background: blue;
+    width:500px;
+    height: 92px;
+    }
+    .left {
+    float:left;
+    width: 150px;
+    background: red;
+    height: 100%;
+    }
+    .right{
+    float:right;
+    width:350px;
+    background: yellow;
+    } */

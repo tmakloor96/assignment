@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #fefefe;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+}
+.humberger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover {
+    color: #11101b;
+    background: #fefefe;
+}
+.nav-bar ul li a.active {
+color: #11101b;
+background: #fefefe;
+}
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}   
+@media only screen and (max-width: 900px){
+    .humberger{
+        display: block;
+        cursor: pointer;
+    }
+    .humberger .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+
+    }
+    .nav-bar{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+} 
+img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+ .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+.center h1{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+.center h2{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.center h3{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    width: 855px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.center .buttons{
+    margin: 35px 80px;
+    text-align: center;
+}
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background: red;
+    border: 1px solid #cc0000;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: .5s;
+}
+.buttons .btn{
+    margin-left: 25px;
+}
+.buttons button:hover{
+    background: #cc0000;
+}
+/* #section1{
+    background: linear-gradient(-45deg, white 30%, yellow 0%);
+}
+.content{
+    display: flex;
+    width: 200%;
+}
+.section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+} */
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+.section-content {
+    width:100%;
+    height:675px;
+    /* left: 25%; */
+    position: relative;
+    background-color: white;
+    opacity: 0.7;
+    display: none;
+}
+.display-block {
+    display: block ! important;
+}
+#section1 img{
+    background-size: cover;
+}
+#section2 img{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#section3 img{
+    background-size: cover;
+}
+.test {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .card {
+    border: 1px solid #dadada;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.4em;
+  }
+  
+  
+  .card h3 {
+    padding: 2px;
+    margin: 8px 0;
+    /*   line-height: 20px !important;
+    font-size: 18px !important;
+    font-weight: 500 !important; */
+  }
+  
+  .card:hover {
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card .container {
+    padding: 2px 14px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card h4 {
+    margin-top: auto;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .card p {
+    margin: 14px 0;
+    color: white;
+  }
